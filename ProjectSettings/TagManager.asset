@@ -8,11 +8,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - WorldBoundary
   - Water
   - UI
   - 
   - 
+  - Player
+  - Obstacles
+  - Environment
   - 
   - 
   - 
@@ -22,10 +25,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Camera
   - 
   - 
   - 
