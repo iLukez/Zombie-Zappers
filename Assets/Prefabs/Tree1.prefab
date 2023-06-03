@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: -5916336125460956811}
   - component: {fileID: 4257202055973814194}
   - component: {fileID: 2209778953996800448}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Tree1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5e83d3955ac3742eeacb1f7853223b91, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
