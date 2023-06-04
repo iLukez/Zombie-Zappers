@@ -22,11 +22,14 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage()
     {
-        lives--;
-        animator.SetInteger("Lives", lives);
-        if (lives <= 0)
-        {
-            Die();
+        if (lives > 0) {
+            animator.Play("Zombie_Damage");
+            lives--;
+            animator.SetInteger("Lives", lives);
+            if (lives <= 0)
+            {
+                Die();
+            }
         }
     }
 
@@ -34,6 +37,7 @@ public class Enemy : MonoBehaviour
     {
         gameObject.GetComponent<AIPath>().enabled = false;
         gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        gameObject.GetComponent<Collider2D>().enabled = false;
         isDying = true;
     }
 

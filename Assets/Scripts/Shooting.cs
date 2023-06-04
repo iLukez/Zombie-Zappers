@@ -8,6 +8,7 @@ public class Shooting : MonoBehaviour
     private Vector3 mousePos;
     public GameObject bullet;
     public Transform bulletTransform;
+    public GameObject weapon;
     public bool canFire;
     private float timer;
     public float timeBetweenFiring;
@@ -42,6 +43,7 @@ public class Shooting : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && canFire)
         {
             canFire = false;
+            weapon.GetComponentInChildren<ParticleSystem>().Play();
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
         }
     }
